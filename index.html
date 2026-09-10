@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Sitio estático en español sobre Cristiano Ronaldo: biografía, trayectoria interactiva, estadísticas destacadas y galería real.">
+  <title>Cristiano Ronaldo | Leyenda del fútbol</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido principal</a>
+
+  <header class="site-header">
+    <div class="nav-shell">
+      <a class="brand" href="#inicio" aria-label="Ir al inicio">CR7</a>
+
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="site-nav">
+        <span>Menú</span>
+        <span class="menu-lines" aria-hidden="true"></span>
+      </button>
+
+      <nav class="site-nav" id="site-nav" aria-label="Navegación principal">
+        <a href="#biografia">Biografía</a>
+        <a href="#trayectoria">Trayectoria</a>
+        <a href="#estadisticas">Estadísticas</a>
+        <a href="#galeria">Galería</a>
+        <a href="#fuentes">Fuentes</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="hero" id="inicio" aria-labelledby="titulo-principal">
+      <img
+        class="hero-image"
+        src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Cristiano_Ronaldo_2275.jpg?width=1200"
+        alt=""
+        aria-hidden="true"
+      >
+      <div class="hero-overlay"></div>
+      <div class="hero-content">
+        <p class="eyebrow">Fútbol portugués · Del extremo eléctrico al goleador histórico</p>
+        <h1 id="titulo-principal">Cristiano Ronaldo</h1>
+        <p class="hero-description">
+          Un recorrido visual y claro por la carrera de uno de los futbolistas más determinantes del siglo XXI.
+        </p>
+        <div class="hero-actions" aria-label="Accesos rápidos">
+          <a class="button button-primary" href="#trayectoria">Ver trayectoria</a>
+          <a class="button button-secondary" href="https://www.cristianoronaldo.com/" target="_blank" rel="noopener noreferrer">Sitio oficial <span class="external-note">(abre en nueva pestaña)</span></a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section intro-band" id="biografia" aria-labelledby="biografia-titulo">
+      <div class="section-inner split-layout">
+        <div>
+          <p class="section-kicker">Biografía</p>
+          <h2 id="biografia-titulo">De Madeira a icono global</h2>
+        </div>
+        <div class="prose">
+          <p>
+            Cristiano Ronaldo dos Santos Aveiro nació el 5 de febrero de 1985 en Funchal, Madeira. Se formó en clubes locales antes de llegar al Sporting CP, donde su explosividad y confianza llamaron la atención de Manchester United.
+          </p>
+          <p>
+            Su carrera combina potencia física, remate, ambición competitiva y una adaptación constante: primero como extremo desequilibrante, después como delantero de área y líder de Portugal.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="trayectoria" aria-labelledby="trayectoria-titulo">
+      <div class="section-inner">
+        <div class="section-heading">
+          <p class="section-kicker">Trayectoria interactiva</p>
+          <h2 id="trayectoria-titulo">Elige una etapa para explorarla</h2>
+        </div>
+
+        <div class="timeline-layout">
+          <ol class="timeline-list" aria-label="Etapas de la carrera de Cristiano Ronaldo">
+            <li>
+              <button class="timeline-button is-active" type="button" data-stage="sporting" aria-controls="timeline-panel" aria-pressed="true">
+                <span class="timeline-year">2002</span>
+                <span>Sporting CP</span>
+              </button>
+            </li>
+            <li>
+              <button class="timeline-button" type="button" data-stage="united" aria-controls="timeline-panel" aria-pressed="false">
+                <span class="timeline-year">2003-2009</span>
+                <span>Manchester United</span>
+              </button>
+            </li>
+            <li>
+              <button class="timeline-button" type="button" data-stage="madrid" aria-controls="timeline-panel" aria-pressed="false">
+                <span class="timeline-year">2009-2018</span>
+                <span>Real Madrid</span>
+              </button>
+            </li>
+            <li>
+              <button class="timeline-button" type="button" data-stage="juventus" aria-controls="timeline-panel" aria-pressed="false">
+                <span class="timeline-year">2018-2021</span>
+                <span>Juventus</span>
+              </button>
+            </li>
+            <li>
+              <button class="timeline-button" type="button" data-stage="actualidad" aria-controls="timeline-panel" aria-pressed="false">
+                <span class="timeline-year">2021-hoy</span>
+                <span>United, Al-Nassr y Portugal</span>
+              </button>
+            </li>
+          </ol>
+
+          <article class="timeline-card" id="timeline-panel" aria-live="polite">
+            <p class="timeline-tag">2002 · Sporting CP</p>
+            <h3>El debut profesional</h3>
+            <p>
+              Ronaldo irrumpe en el primer equipo del Sporting CP con regate, velocidad y una personalidad difícil de ignorar. Esa primera temporada abre la puerta a su salto a Inglaterra.
+            </p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section stats-band" id="estadisticas" aria-labelledby="estadisticas-titulo">
+      <div class="section-inner">
+        <div class="section-heading">
+          <p class="section-kicker">Estadísticas destacadas</p>
+          <h2 id="estadisticas-titulo">Números que explican una carrera</h2>
+          <p class="section-note">
+            Cifras de referencia recopiladas de fuentes oficiales y páginas históricas; algunas pueden variar mientras siga compitiendo.
+          </p>
+        </div>
+
+        <div class="stats-grid">
+          <article class="stat-card">
+            <span class="stat-value" data-counter data-target="5">5</span>
+            <h3>Balones de Oro</h3>
+            <p>Premios individuales que resumen su dominio en distintas etapas.</p>
+          </article>
+          <article class="stat-card">
+            <span class="stat-value" data-counter data-target="5">5</span>
+            <h3>Champions League</h3>
+            <p>Una con Manchester United y cuatro con Real Madrid.</p>
+          </article>
+          <article class="stat-card">
+            <span class="stat-value" data-counter data-target="451">451</span>
+            <h3>Goles con Real Madrid</h3>
+            <p>Máximo goleador histórico del club blanco.</p>
+          </article>
+          <article class="stat-card">
+            <span class="stat-value" data-counter data-target="970" data-suffix="+">970+</span>
+            <h3>Goles oficiales</h3>
+            <p>Registro total de carrera senior en clubes y selección.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section" id="galeria" aria-labelledby="galeria-titulo">
+      <div class="section-inner">
+        <div class="section-heading">
+          <p class="section-kicker">Galería</p>
+          <h2 id="galeria-titulo">Tres miradas reales a su recorrido</h2>
+        </div>
+
+        <div class="gallery-grid">
+          <figure class="gallery-card">
+            <img
+              src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Cristiano_Ronaldo_2275.jpg?width=800"
+              alt="Cristiano Ronaldo celebrando con Portugal durante un partido en Yerevan en 2025"
+              loading="lazy"
+            >
+            <figcaption>
+              <strong>Portugal, 2025.</strong>
+              <a href="https://commons.wikimedia.org/wiki/File:Cristiano_Ronaldo_2275.jpg" target="_blank" rel="noopener noreferrer">Ver archivo <span class="external-note">(abre en nueva pestaña)</span></a>
+            </figcaption>
+          </figure>
+
+          <figure class="gallery-card">
+            <img
+              src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Cristiano_Ronaldo_2018.jpg?width=800"
+              alt="Cristiano Ronaldo con la camiseta de Portugal durante el Mundial de 2018"
+              loading="lazy"
+            >
+            <figcaption>
+              <strong>Portugal, 2018.</strong>
+              <a href="https://commons.wikimedia.org/wiki/File:Cristiano_Ronaldo_2018.jpg" target="_blank" rel="noopener noreferrer">Ver archivo <span class="external-note">(abre en nueva pestaña)</span></a>
+            </figcaption>
+          </figure>
+
+          <figure class="gallery-card">
+            <img
+              src="https://commons.wikimedia.org/wiki/Special:Redirect/file/Cristiano_Ronaldo_~_Manchester_United.jpg?width=800"
+              alt="Cristiano Ronaldo jugando para Manchester United con uniforme rojo"
+              loading="lazy"
+            >
+            <figcaption>
+              <strong>Manchester United.</strong>
+              <a href="https://commons.wikimedia.org/wiki/File:Cristiano_Ronaldo_~_Manchester_United.jpg" target="_blank" rel="noopener noreferrer">Ver archivo <span class="external-note">(abre en nueva pestaña)</span></a>
+            </figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+
+    <section class="section sources-band" id="fuentes" aria-labelledby="fuentes-titulo">
+      <div class="section-inner">
+        <div class="section-heading compact">
+          <p class="section-kicker">Enlaces funcionales</p>
+          <h2 id="fuentes-titulo">Para seguir investigando</h2>
+        </div>
+        <ul class="source-list">
+          <li><a href="https://www.cristianoronaldo.com/" target="_blank" rel="noopener noreferrer">Sitio oficial de Cristiano Ronaldo <span class="external-note">(abre en nueva pestaña)</span></a></li>
+          <li><a href="https://www.realmadrid.com/es-ES/el-club/historia/leyendas-futbol/cristiano-ronaldo-dos-santos-aveiro" target="_blank" rel="noopener noreferrer">Ficha histórica de Cristiano Ronaldo en Real Madrid <span class="external-note">(abre en nueva pestaña)</span></a></li>
+          <li><a href="https://www.fifa.com/en/tournaments/mens/worldcup/canadamexicousa2026/articles/cristiano-ronaldo-stats-quotes-highlights-trivia-quiz" target="_blank" rel="noopener noreferrer">Perfil y datos destacados en FIFA <span class="external-note">(abre en nueva pestaña)</span></a></li>
+          <li><a href="https://commons.wikimedia.org/wiki/Category:Cristiano_Ronaldo" target="_blank" rel="noopener noreferrer">Galería de Cristiano Ronaldo en Wikimedia Commons <span class="external-note">(abre en nueva pestaña)</span></a></li>
+        </ul>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <p>Proyecto educativo estático creado con HTML, CSS y JavaScript vanilla.</p>
+      <a href="#inicio">Volver arriba</a>
+    </div>
+  </footer>
+</body>
+</html>
