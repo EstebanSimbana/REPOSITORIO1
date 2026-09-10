@@ -1,0 +1,16 @@
+{
+  "name": "pagina-cristiano-ronaldo",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "npm run validate:html && npm run test:ui",
+    "validate:html": "html-validate index.html",
+    "test:ui": "playwright test"
+  },
+  "devDependencies": {
+    "@axe-core/playwright": "^4.13.0",
+    "@playwright/test": "^1.63.0",
+    "html-validate": "^11.15.0"
+  }
+}
